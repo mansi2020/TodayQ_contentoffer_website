@@ -15,6 +15,7 @@ const app = express();
 const corsOptions = {
   origin: ['https://today-q-contentoffer-frontend.vercel.app'],
   methods : ["POST", "GET"],
+  credentials:true
 };
 app.use(cors(corsOptions));
 app.use(express.json());
