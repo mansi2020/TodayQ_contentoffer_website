@@ -12,7 +12,10 @@ const PORT = process.env.PORT;
 const URI = process.env.URI;
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'https://today-q-contentoffer-website.vercel.app'
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use("/api/content", contentRoutes);
