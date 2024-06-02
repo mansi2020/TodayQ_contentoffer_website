@@ -39,7 +39,7 @@ const FormData = () => {
     };
 
     try {
-      const response = await axios.post('today-q-contentoffer-website.vercel.app/api/content/add', data);
+      const response = await axios.post('https://today-q-contentoffer-website.vercel.app/api/content/add', data);
       navigate("/");
       toast.success("Data posted successfully");
       console.log("Response Data:", response.data);
