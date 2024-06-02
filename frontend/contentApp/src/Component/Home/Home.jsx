@@ -14,7 +14,7 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/content/get');
+      const response = await axios.get('today-q-contentoffer-website.vercel.app/api/content/get');
       // const initialData = response.data.data.map(content => ({ ...content, quantity: 0 }));
       setContentData(response.data.data);
       
