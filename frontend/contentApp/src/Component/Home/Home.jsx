@@ -14,7 +14,7 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://today-q-contentoffer-website.vercel.app/api/content/get');
+      const response = await axios.get('https://todayq-contentoffer-website.onrender.com/api/content/get');
       // const initialData = response.data.data.map(content => ({ ...content, quantity: 0 }));
       setContentData(response.data.data);
       
