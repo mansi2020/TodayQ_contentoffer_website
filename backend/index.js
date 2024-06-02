@@ -12,11 +12,12 @@ const PORT = process.env.PORT;
 const URI = process.env.URI;
 
 const app = express();
-app.use("/",(req,res)=>{
-  console.log(`server is running at ${PORT}`);
-  res.send("Server is running");
-  
-})
+// app.use("/",(req,res)=>{
+//   console.log(`server is running at ${PORT}`);
+//   // res.send("Server is running");
+
+
+// })
 const corsOptions = {
   origin: ['https://today-q-contentoffer-frontend.vercel.app'],
   methods : ["POST", "GET"],
