@@ -37,7 +37,7 @@ const Cart = () => {
     try {
       for (const item of cartData) {
         const { _id, ...postData } = item; // Exclude _id field from postData
-        const response = await fetch('http://localhost:5000/api/order/add', {
+        const response = await fetch('today-q-contentoffer-website.vercel.app/api/order/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
