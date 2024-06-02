@@ -1,0 +1,71 @@
+/* FormData.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d1dbe4; /* Light background */
+  color: #194a7a; /* Dark blue text */
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 80px);
+  background-color: #d1dbe4;
+}
+
+.form-content {
+  background-color: #a3b7ca; /* Form background */
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  color: #194a7a; /* Form title color */
+  margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #7593af;
+  border-radius: 5px;
+  background-color: #d1dbe4; /* Input background */
+  color: #194a7a; /* Input text color */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #476f95; /* Focus border color */
+  outline: none;
+}
+
+.form-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #476f95; /* Button background */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+.form-button:hover {
+  background-color: #194a7a; /* Hover button background */
+}
+
+#form-container-img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 25px;
+}

@@ -1,0 +1,95 @@
+/* Home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d1dbe4;
+  color: #194a7a;
+}
+
+.home-header {
+  background-color: #476f95;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+}
+
+.home-header h1 {
+  margin: 0;
+}
+
+.home-header button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #7593af;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.home-header button:hover {
+  transform: translateY(-3px);
+}
+
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #a3b7ca;
+  padding: 20px;
+  border: 1px solid #7593af;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #194a7a;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.card button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #476f95;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #194a7a;
+}
+
+.card button:nth-of-type(2) {
+  background-color: #7593af;
+}
+
+.card button:nth-of-type(2):hover {
+  background-color: #476f95;
+}
