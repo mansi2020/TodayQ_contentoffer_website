@@ -13,9 +13,10 @@ const URI = process.env.URI;
 
 const app = express();
 const corsOptions = {
-  origin: 'https://today-q-contentoffer-frontend.vercel.app'
+  origin: ['https://today-q-contentoffer-frontend.vercel.app'],
+  methods : ["POST", "GET"],
 };
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use("/api/content", contentRoutes);
