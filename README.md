@@ -1,3 +1,66 @@
+# Publisher Portal for Content Offerings
+
+## Project Description
+This project is a publisher portal that allows publishers to upload their content offerings. It includes a home screen listing these offerings and a checkout feature where users can add offerings to a cart and complete transactions. All data created or modified is saved to a database.
+
+## Features
+
+### Publisher Content Management
+
+#### Content Offering Submission
+- Form for publishers to add new content offerings with metadata like title, description, price, etc.
+- Ability to save each offering to the database.
+
+#### Home Screen/Listings Page
+- Display all content offerings on the home screen with necessary details.
+
+### Checkout Feature
+
+#### Cart and Checkout
+- Users can add content offerings to a cart.
+- Checkout page summarizes items in the cart, shows the total price, and saves the transaction to the database upon completion.
+- Users can upload a document with a specific offering.
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js
+- npm or yarn
+- MongoDB or any other database of your choice
+
+### Steps
+
+1. **Clone the repository**
+    ```sh
+    git clone https://github.com/yourusername/publisher-portal.git
+    cd publisher-portal
+    ```
+
+2. **Install dependencies**
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Set up the database**
+    - Ensure MongoDB is installed and running.
+    - Create a database named `publisherPortal`.
+    - Update the MongoDB URI in `server/config/db.js` with your connection string.
+
+4. **Start the server**
+    ```sh
+    npm run server
+    ```
+
+5. **Start the client**
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
+
+## Project Structure
 
 ## API Endpoints
 
@@ -56,8 +119,3 @@
     ```
 6. **Create a pull request**
 
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For any inquiries or feedback, please contact [your-email@example.com].
