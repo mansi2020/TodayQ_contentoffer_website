@@ -1,5 +1,7 @@
 # Publisher Portal for Content Offerings
 
+## hosted Link : https://today-q-contentoffer-frontend.vercel.app/
+
 ## Project Description
 This project is a publisher portal that allows publishers to upload their content offerings. It includes a home screen listing these offerings and a checkout feature where users can add offerings to a cart and complete transactions. All data created or modified is saved to a database.
 
